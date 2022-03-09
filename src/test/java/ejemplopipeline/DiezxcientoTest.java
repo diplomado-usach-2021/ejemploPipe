@@ -16,7 +16,7 @@ public class DiezxcientoTest {
 
 	@Test
 	public void testImpuesto() throws Exception {
-		assertEquals(0.0, diezxciento.impuesto(diezxciento.sueldo), 0.001);
+		assertEquals(0.0f, diezxciento.impuesto(diezxciento.sueldo), 0.001);
 
 	}
 
