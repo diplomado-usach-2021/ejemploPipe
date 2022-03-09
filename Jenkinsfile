@@ -2,21 +2,21 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Clean Code') {
             steps {
               //  sh "/usr/local/opt/maven/bin/mvn clean"
               sh "mvn clean"
             }
         }
 
-        stage('test') {
+        stage('Compile Code') {
             steps {
                // sh "/usr/local/opt/maven/bin/mvn compile"
                 sh "mvn compile"
             }
         }
 
-        stage('test2') {
+        stage('Test Code') {
             steps {
                // sh ''' /usr/local/opt/maven/bin/mvn test'''
                  sh "mvn test"
