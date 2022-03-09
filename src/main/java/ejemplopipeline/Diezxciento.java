@@ -27,8 +27,14 @@ public class Diezxciento {
 	
 	public int saldoAhorro() {
 		double noventaxciento = ahorro * 0.9;
+
+		System.out.println("SaldoAhorro: "+(int) noventaxciento); 
+
+
 		return (int) noventaxciento;
 	}
+
+
 	public Float impuesto(int sueldo){
 		Integer sueldoAnual = sueldo*12;
 		
@@ -43,6 +49,8 @@ public class Diezxciento {
 		System.out.println("Inpuesto"+inpuesto); 
 		return inpuesto;
 	}
+	
+
 	
 
 }
